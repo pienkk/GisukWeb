@@ -1,0 +1,20 @@
+*{
+    box-sizing : border-box;
+}
+nav {
+    float : left; 
+    background-color: beige;
+    position : fixed;
+    width: 30%;
+    height: 100%;
+}
+a {
+    text-decoration: none; /* 링크 언더바 지우기 */
+}
+a:hover {
+    text-decoration: underline; /* 링크 마우스 오버 언더바 생성 */
+  }
+li {
+    list-style : none; /* 리스트 점 지우기 */
+    width : 30%;
+}
