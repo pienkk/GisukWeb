@@ -1,20 +1,76 @@
 *{
-    box-sizing : border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
 }
 nav {
-    float : left; 
     background-color: beige;
-    position : fixed;
-    width: 30%;
+    border-right: 1px solid #ddd;
+    position: fixed; /* 네비바 고정*/
+    width: 220px;
     height: 100%;
 }
-a {
-    text-decoration: none; /* 링크 언더바 지우기 */
+h1 {
+    font-size: 26px; 
+    padding: 20px;
 }
-a:hover {
-    text-decoration: underline; /* 링크 마우스 오버 언더바 생성 */
-  }
-li {
-    list-style : none; /* 리스트 점 지우기 */
-    width : 30%;
+#profileImage {
+    display: block;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 180px;
+    position: relative;
+    margin: 30px auto;
+    margin-bottom: 10px;
+    border: 3px solid #FFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),inset 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu li {
+    list-style: none; /* 리스트 스타일 삭제 */
+    height: 30px;
+    line-height: 30px;
+    padding:0 20px;
+    font-size: 16px;
+}
+.menu li a {
+    text-decoration: none;  /* 리스트 언더바 제거 */
+    color: gray;
+}
+.menu li a:hover {
+    text-decoration: underline; /* 리스트 마우스 오버 언더바 생성 */
+    color: blue;
+}
+#linkIcon li, a{
+    list-style: none; /* 리스트 스타일 삭제 */
+    display: inline-block; 
+    color: gray;
+}
+#linkIcon {
+    font-size: 30px;
+    position: fixed;
+    bottom: 0%;
+}
+#linkIcon li a:hover{
+    color : blue;
+}
+#emailIcon{
+    left: 55px;
+}
+#blogIcon{
+    left: 100px;
+}
+#instaIcon{
+    left: 140px;
+}
+#githubIcon{
+    left: 180px;
+}
+section {
+    padding-left: 300px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }

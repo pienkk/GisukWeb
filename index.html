@@ -5,17 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>레이아웃 잡기</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/beaad71a7d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav>
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">TECH SKILL</a></li>
-            <li><a href="">EDUCATION</a></li>
+      <img id="profileImage" src="img/profile.jpg">
+      <h1>Gisuk JANG</h1>
+        <ul class="menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skill">TECH SKILL</a></li>
+            <li><a href="#education">EDUCATION</a></li>
         </ul>
-        EMAIL, <a href="https://velog.io/@kisuk623">BLOG</a>, INSTA, <a href="https://github.com/pienkk">GITHUB</a>
-
+        <ul id="linkIcon">
+          <li><a href=""><i class="fa-regular fa-envelope" id="emailIcon"></i></a> </li>
+          <li><a href="https://velog.io/@kisuk623"><i class="fa-brands fa-blogger" id="blogIcon"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram" id="instaIcon"></i></a></li>
+          <li><a href="https://github.com/pienkk"><i class="fa-brands fa-github" id="githubIcon"></i></a></li>
+        </ul>
     </nav>
+    <section>
+      <article id="home">
+        <h2>HOME</h2>
+        <p>홈 설명</p><br><br><br><br><br><br><br><br>
+      </article>
+      <article id="about">
+        <h2>ABOUT</h2>
+        <p>자기소개</p><br><br><br><br><br><br><br><br><br><br><br>
+      </article>
+      <article id="skill">
+        <h2>TECH SKILL</h2>
+        <p>skill 소개</p><br><br><br><br><br><br><br>
+      </article>
+      <article id="education">
+        <h2>EDUCATION</h2>
+        <p>EDU 소개</p><br><br><br><br><br><br><br><br>
+      </article>
+    </section>
   </body>
-  </html>
+</html>
