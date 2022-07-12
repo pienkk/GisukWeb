@@ -134,23 +134,7 @@ h2 {
     40%{transform: rotate(-15deg);}
 }
 
-/*
-.icon--blog{
-    left: 0px;
-}
-.icon--instagram{
-    left: 0px;
-}
-.icon--github{
-    left: 180px;
-}
-*/
-/*#navObject{
-    display: inline-block;
-    width: 240px;
-    height: 100vh;
-    background-color: black;
-}*/
+
 .section {
     position: relative; 
     left : 260px;
@@ -170,40 +154,7 @@ h2 {
     font-family: 'Do Hyeon', sans-serif;
     -webkit-text-stroke: 0.01px rgb(60, 41, 41);
 }
-/*
-.rotate-words {
-    display: inline;
-    margin-left: 10px;
-}
-.rotate-words span {
-    width: max-content;
-    position: absolute;
-    background-color: #bb93fc;
-    padding-inline: 10px;
-    opacity: 0;
-    transform-origin: 10% 75%;
-    animation: rotateWords 12s
-    var(--d) linear infinite;
-}
-@keyframes rotateWords {
-    5% {
-        opacity: 1;
-    }
-    10%,
-    20%{
-        opacity: 1;
-        transform: rotate(3deg);
-    }
-    15%{
-        transform: rotate(-1deg);
-    }
-    25%{
-        opacity: 0;
-        transform: translateY(90px)
-        rotate(10deg);
-    }
-}
-*/
+
 .container {
     display: inline-flex;
     flex-wrap: wrap;
