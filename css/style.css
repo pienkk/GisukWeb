@@ -3,17 +3,46 @@
 }
 body{
     margin: 0px;
+    background-color: #F3E8EB;
 }
+article h2 {
+    padding-left: 0px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+article p{
+    line-height:150%;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 20px;
+}
+article h3 {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 24px;
+}
+#skill, #education{
+    margin-top: 500px;
+}
+#education{
+    margin-bottom: 600px;
+}
+
 nav {
-    background-color: beige;
+    background-color: #d7c3d4;
     border-right: 1px solid #ddd;
     position: fixed; /* 네비바 고정*/
     width: 220px;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
-h1 {
+h2 {
     font-size: 26px; 
-    padding: 20px;
+    padding: 0px 10px 0px 40px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+.subTitle{
+    padding: 0px 10px 40px 43px;
 }
 #profileImage {
     display: block;
@@ -23,26 +52,33 @@ h1 {
     border-radius: 180px;
     position: relative;
     margin: 30px auto;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     border: 3px solid #FFF;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),inset 0px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
+.menu {
+    margin-top: 70px;
+    
+}
 .menu li {
     list-style: none; /* 리스트 스타일 삭제 */
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
     padding:0 20px;
     font-size: 16px;
+    
 }
 .menu li a {
     text-decoration: none;  /* 리스트 언더바 제거 */
-    color: gray;
+    color: #433E49;
 }
 .menu li a:hover {
     text-decoration: underline; /* 리스트 마우스 오버 언더바 생성 */
-    color: blue;
+    color: #F3E8EB;
 }
+
+
 #linkIcon li, a{
     list-style: none; /* 리스트 스타일 삭제 */
     display: inline-block; 
@@ -52,23 +88,59 @@ h1 {
     font-size: 30px;
     position: fixed;
     bottom: 0%;
+    column-gap: 25px;
+    padding-left: 12px;
 }
-#linkIcon li a:hover{
-    color : blue;
+.icon{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: .3s;
 }
-#emailIcon{
-    left: 55px;
+.icon:hover{
+    outline-offset: 4px;
 }
-#blogIcon{
-    left: 100px;
+.icon:hover i{
+    animation: shake .3s;
 }
-#instaIcon{
-    left: 140px;
+.icon--blog:hover {
+    background-color: #4aa8d8;
+    outline-color: #4aa8d8;
 }
-#githubIcon{
-    left: 180px;
+.icon--instagram:hover {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); 
+    outline-color: #a02d76;
+}
+.icon--github:hover {
+    background-color: #9558cc;
+    outline-color: #9558cc;
+}
+@keyframes shake {
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
 }
 
+/*
+.icon--blog{
+    left: 0px;
+}
+.icon--instagram{
+    left: 0px;
+}
+.icon--github{
+    left: 180px;
+}
+*/
 /*#navObject{
     display: inline-block;
     width: 240px;
@@ -76,19 +148,127 @@ h1 {
     background-color: black;
 }*/
 .section {
-    position: relative;
+    position: relative; 
     left : 260px;
+    width: 80vw;
 }
-
 #homeImage {
     width: 80vw;
-    height: 99vh;
+    height: 100vh;
     object-fit: cover;
 }
 .homeText {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 1%;
+    left: 7%;
     font-size: 40px;
-    color: white;
+    color: #F3E8EB;
+    font-family: 'Do Hyeon', sans-serif;
+}
+/*
+.rotate-words {
+    display: inline;
+    margin-left: 10px;
+}
+.rotate-words span {
+    width: max-content;
+    position: absolute;
+    background-color: #bb93fc;
+    padding-inline: 10px;
+    opacity: 0;
+    transform-origin: 10% 75%;
+    animation: rotateWords 12s
+    var(--d) linear infinite;
+}
+@keyframes rotateWords {
+    5% {
+        opacity: 1;
+    }
+    10%,
+    20%{
+        opacity: 1;
+        transform: rotate(3deg);
+    }
+    15%{
+        transform: rotate(-1deg);
+    }
+    25%{
+        opacity: 0;
+        transform: translateY(90px)
+        rotate(10deg);
+    }
+}
+*/
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.tech-1 {
+    width: 30vw;
+}
+.tech-2 {
+    width: 30vw;
+}
+.tech-3 {
+    width: 30vw;
+}
+svg{
+    width: 114px;
+    height: 114px;
+    margin: 1em;
+}
+.bg {
+    fill: none;
+    stroke-width: 10px;
+    stroke: #1A2C34;
+}
+[class^="meter-"] {
+    fill: none;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+.meter-1 {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 315;
+    stroke: #00FFFF;
+    animation: progress-1 1.5s ease-out;
+}
+.meter-2 {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 330;
+    stroke: #00FF00;
+    animation: progress-2 1s ease-out;
+}
+.meter-3 {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 345;
+    stroke: #ff33ff;
+    animation: progress-3 .75s ease-out;
+}
+
+@keyframes progress-1 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 315;
+    }
+}
+@keyframes progress-2 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 330;
+    }
+}
+@keyframes progress-3 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 345;
+    }
 }
