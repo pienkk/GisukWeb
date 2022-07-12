@@ -68,9 +68,27 @@ h1 {
 #githubIcon{
     left: 180px;
 }
-section {
-    padding-left: 300px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+
+/*#navObject{
+    display: inline-block;
+    width: 240px;
+    height: 100vh;
+    background-color: black;
+}*/
+.section {
+    position: relative;
+    left : 260px;
+}
+
+#homeImage {
+    width: 80vw;
+    height: 99vh;
+    object-fit: cover;
+}
+.homeText {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 40px;
+    color: white;
 }
