@@ -33,7 +33,7 @@ article h3 {
 
 nav {
     background-color: #E4DCCF;
-    border-right: 1px solid black;
+    border-right: 1px solid white;
     position: fixed; /* 네비바 고정*/
     width: 220px;
     height: 100%;
