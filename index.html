@@ -16,10 +16,10 @@
       <h2>Gisuk JANG</h2>
       <span class="subTitle">BackEnd Developer</span>
         <ul class="menu">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skill">TECH SKILL</a></li>
-            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#home" class = "nav">HOME</a></li>
+            <li><a href="#about" class = "nav">ABOUT</a></li>
+            <li><a href="#skill" class = "nav">TECH SKILL</a></li>
+            <li><a href="#education" class="nav">EDUCATION</a></li>
         </ul>
         <ul id="linkIcon">
           <li><a href="https://velog.io/@kisuk623" class="icon icon--blog"><i class="fa-brands fa-stack-overflow"></i></a></li>
@@ -28,19 +28,19 @@
         </ul>
     </nav>
     <section class="section">
-      <article id="home">
+      <article class="hidden" id="home">
         <div id="homeBox">
           <img id="homeImage" src="./Img/profile.jpg">
           <h1 class="homeText">안녕하세요!<br>개발 꿈나무<br>장기석 입니다.</h1>
         </div>
       </article>
-      <article id="about">
+      <article class="hidden" id="about">
         <h2>About me</h2>
         <h3>새로운 길을 향해 나가는 백엔드 개발자</h3>
         <p class="contents">안녕하세요 백엔드 개발자가 되고 싶은 장기석 입니다.<br>
         28살 나이가 빠르진 않지만 늦다고도 생각되지 않습니다.<br>저는 프로그래밍을 접하고 사람들이 더욱 편한 서비스를 썼으면 좋겠다.<br>내가 그걸 만들어 보고 싶다라는 마음을 가지고 개발자 라는 직업을 선택하였고 개발을 배워가고 있습니다.</p>
       </article>
-      <article id="skill">
+      <article class="hidden" id="skill">
         <h2 class="">Tech Skill</h2>
         <div class="container">
           <div class="tech-1">
@@ -68,10 +68,11 @@
             </svg>
           </div>
       </article>
-      <article id="education">
+      <article class="hidden" id="education">
         <h2>Education</h2>
         <p class="contents">현재 Wecode 부트캠프 사전스터디를 진행중이며, 8월 16일부터 Wecode 백엔드 커리큘럼을 진행할 예정입니다.</p>
       </article>
     </section>
+    <script src="./src/index.js"></script>
   </body>
 </html>
