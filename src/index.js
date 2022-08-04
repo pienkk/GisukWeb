@@ -26,4 +26,15 @@ const animate = function() {
   }
  
   animate().init();
+
+const bars = document.querySelector("#sidebar");
+const miniMenu = document.querySelector("#minimenu");
+const miniIcon = document.querySelector("#sidelinkIcon")
+
+function onClick() {
+  miniMenu.classList.toggle("sidehidden");
+  miniIcon.classList.toggle("sidehidden");
+}
+
+bars.addEventListener("click", onClick);
   
